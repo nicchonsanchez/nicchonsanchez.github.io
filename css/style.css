@@ -1,0 +1,661 @@
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', serif;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.clear{
+    clear: both;
+}
+
+.mobile{
+    display: none;
+}
+
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: calc(60px + 3vh) 0;
+    position: relative;
+}
+
+h2.titulo-section{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.barra-porcentagem{
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+}
+.barra-porcentagem .nivel{
+    height: 10px;
+    /*background: linear-gradient(to right, #010380, #25537b, #010380);*/
+    background-color: #12e1b9;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar {
+    background: white;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(navy, #285a7b);
+}
+::-webkit-scrollbar-track-piece {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+header{
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+header nav{
+    display: inline-block;
+    max-width: 96%;
+    padding: 0 0 5px;
+}
+header nav ul{
+    display: inline-block;
+    padding: 10px 20px 10px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 10px 10px;
+    cursor:context-menu;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 1px 1px;
+}
+header nav ul div{
+    padding: 5px 10px;
+    background-color: rgb(226, 226, 226);
+    color: #221517;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+header nav ul div:hover{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+}
+
+
+.back-to-top{
+    transition: 1s;
+    transform: rotateZ(-90deg);
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    z-index: 1000;
+}
+.back-to-top i{
+    transition: 0.3s;
+    padding: 20px 30px;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    background-color: rgb(18 194 160 / 50%);
+    font-size: 2em;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* HOME */
+section.home{
+    background-color: #285a7b;
+    background-image: url('../images/nicchon-home-desktop.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.home aside{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    max-width: 650px;
+    background-color: rgba(34, 21, 23, 0.7);
+}
+section.home aside .position{
+    position: absolute;
+    max-width: 90%;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%);
+}
+
+/* HOME: Sobre */
+section.home aside .sobre{
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    width: 500px;
+    max-width: 100%;
+}
+section.home aside .sobre h2{
+    font-size: 5em;
+    font-weight: 400;
+}
+section.home aside .sobre h4{
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+/* HOME: Nav */
+section.home aside nav{
+    padding: 10px 0;
+    margin: 15vh 0 0;
+    width: 100%;
+}
+
+section.home aside nav ul{
+    list-style: none;
+    color: #12e1b9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 4vw;
+}
+section.home aside nav ul li{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+section.home aside nav div{
+    transition: .3s;
+    width: 100%;
+    border: 1px solid #12e1b9;
+    padding: 12px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+    section.home aside nav ul li:hover div{
+        color: white;
+        background-color: rgba(18, 225, 185, 0.7);
+        border-color: white;
+    }
+
+section.home aside nav ul li i{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+/* HOME: GitHUB */
+section.home aside .github{
+    transition: 0.3s;
+    color: #12e1b9;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 8vh;
+    left: 5vw;
+    width: 500px;
+    max-width: 90%;
+}
+section.home aside .github a:hover{
+    color: white;
+}
+
+section.home aside .github i{
+    font-size: 22px;
+    transform: translateY(3px);
+    margin-right: 3px;
+}
+section.home aside .github *{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+/* PROFICIENCIAS */
+section.proficiencias{
+    background-color: black;
+    color: white;
+}
+section.proficiencias .bg{
+    background-image: url(../images/proficiencias.jpg);
+    opacity: 0.2;
+}
+
+section.proficiencias .container > div{
+    margin: 50px auto;
+    padding: 40px 5% 60px;
+    width: 700px;
+    max-width: 94%;
+    background: rgba(0,0,0,0.3);
+
+    border: 3px solid white;
+    /*border-image: linear-gradient(0.3turn,#4c2509, white);*/
+    /*border-image-slice: 1;*/
+}
+
+section.proficiencias .formacao-academica h3{
+    text-align: center;
+}
+
+section.proficiencias .formacao-academica > *{
+    text-align: left;
+    margin-bottom: 3.5vh;
+}
+section.proficiencias .formacao-academica > *:last-child{
+    margin-bottom: 0;
+}
+section.proficiencias .formacao-academica p{
+    padding-left: 10px;
+}
+
+section.proficiencias .tabela-percentual{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3.5vh 3vw;
+    text-align: right;
+}
+
+.tabela-percentual h3{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+section.proficiencias .texto{
+    background-color: rgba(34, 21, 23, 0.6);
+    padding: 40px;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+/* PROJETOS */
+section.projetos{
+    background: url('../images/projetos.png') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.projetos h2{
+    color: #285a7b;
+}
+
+.lista-projetos{
+    padding: 30px 2%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.lista-projetos .projeto-single{
+    transition: 0.3s;
+    display: grid;
+    grid-template-rows: 200px 30px 1fr;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border: 2px solid white;
+    height: 100%;
+}
+    .lista-projetos .projeto-single:hover{
+        background-color: rgb(240, 241, 241, 0.8);
+        border-color: #285a7b;
+        border-image: linear-gradient(90deg, navy, #285a7b);
+        border-image-slice: 1;
+    }
+    .lista-projetos .projeto-single:hover h3{
+        color: #285a7b;
+    }
+
+.lista-projetos .projeto-single .img{
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+.lista-projetos .projeto-single h3{
+    color: navy;
+    font-weight: 500;
+}
+.lista-projetos .projeto-single p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+/* QUEM SOU EU */
+section.quem-sou-eu{
+    background: #955426 url('../images/quem-sou-eu.webp') center no-repeat;
+    background-size: cover;
+}
+section.quem-sou-eu h2.titulo-section{
+    color: white;
+}
+section.quem-sou-eu .info{
+    background-color: rgba(250, 250, 250, 0.6);
+    margin: 30px auto 50px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section.quem-sou-eu .quadro-foto{
+    width: 50vh;
+    min-width: 300px;
+    max-width: 100%;
+    background-color: rgb(229, 229, 229);
+    border: 5px solid white;
+}
+section.quem-sou-eu .foto-quem-sou-eu{
+    transition: 0.5s;
+    background: #ccc url('../images/nicchon-quem-sou-eu.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+    
+    section.quem-sou-eu .info .quadro-foto:hover .foto-quem-sou-eu{
+        transform: rotateY(360deg);
+        background-image: url('../images/nicchon-fantasia.png');
+    }
+section.quem-sou-eu .info .texto{
+    padding: 40px 20px;
+}
+section.quem-sou-eu .info h2,
+section.quem-sou-eu .info p
+{
+    font-weight: 400;
+    color: rgb(23, 23, 23);
+    text-align: right;
+}
+section.quem-sou-eu .info h2{
+    text-transform: uppercase;
+}
+section.quem-sou-eu .info p{
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTATOS */
+section.contatos{
+    background-color: #221517;
+}
+section.contatos h2.titulo-section{
+    color: white;
+}
+section.contatos .bg{
+    background-image: url('../images/contatos.webp');
+    background-attachment: fixed;
+    opacity: 0.7;
+}
+section.contatos .position{
+    background-color: rgba(250, 250, 250, 0.6);
+    margin: 30px auto 50px;
+    padding: 20px;
+    color: rgb(23, 23, 23);
+    
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+section.contatos .position .foto-contatos{
+    background: #ccc url('../images/nicchon-contatos.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+section.contatos .position .info-single{
+    margin-top: 20px;
+}
+section.contatos .info-single h2,
+section.contatos .info-single li,
+section.contatos .endereco
+{
+    font-weight: 400;
+    font-size: 1em;
+    /*text-transform: uppercase;*/
+}
+section.contatos .info-single h2,
+section.contatos .endereco
+{
+    font-weight: 500;
+}
+
+section.contatos .position ul{
+    list-style-type: none;
+}
+section.contatos .position a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+section.contatos .position ul i{
+    font-size: 1em;
+    transform: translate(3px, 0.1em);
+    width: 20px;
+}
+section.contatos .position ul i.fa-whatsapp{
+    color: green;
+    font-size: 1.4em;
+}
+section.contatos .position ul li:hover i,
+section.contatos .position ul i:hover
+{
+    color: blue;
+}
+
+section.contatos .endereco{
+    grid-column: 1/3;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    color: white;
+    background-color: #221517;
+    padding: 10px 2%;
+    text-align: center;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 930px) {
+    /* Projetos */
+    .lista-projetos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .mobile{
+        display: initial;
+    }
+    .desktop{
+        display: none;
+    }
+
+    /* Home */
+    section.home{
+        background-image: url(../images/nicchon-contatos.jpg);
+        background-position: center;
+    }
+    section.home aside{
+        max-width: none;
+        width: 100%;
+        background-color: rgba(34, 21, 23, 0.5);
+    }
+    section.home aside .sobre h2{
+        font-size: 3.5em;
+    }
+    section.home aside nav{
+        margin: 15vh 0 0;
+    }
+    section.home aside .github{
+        bottom: calc(8vh + 30px);
+    }
+
+    /* Projetos */
+    .lista-projetos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Quem sou eu */
+    section.quem-sou-eu .info{
+        display: block;
+    }
+    section.quem-sou-eu .info .foto-quem-sou-eu{
+        width: 100%;
+        max-width: 75vh;
+        height: 500px;
+        max-height: 70vh;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    section.quem-sou-eu .info .texto *{
+        text-align: justify;
+    }
+
+    /* Contatos */
+    section.contatos .position{
+        grid-template-columns: 1fr;
+    }
+    section.contatos .position .foto-contatos{
+        display: inline-block;
+        margin: 0 auto;
+        height: 100vw;
+        max-height: 60vh;
+        max-width: 70vh;
+    }
+    section.contatos .position .endereco{
+        grid-column: 1;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    /* Quem sou eu */
+    section.quem-sou-eu .info p{
+        font-size: 0.8em;
+    }
+
+    /* Contatos */
+    section.contatos .position .foto-contatos{
+        max-height: 80vw;
+    }
+    section.contatos .info-single h2,
+    section.contatos .info-single li,
+    section.contatos .endereco
+    {
+        font-size: 0.8em;
+    }
+}
