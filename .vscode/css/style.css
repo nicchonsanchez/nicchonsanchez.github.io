@@ -385,6 +385,11 @@ section.formacao .habilidades ul li{
 	margin-bottom: 4px;
 }
 
+.cursos-complementates div{
+    border-left: 2px solid var(--cor-principal);
+    padding-left: 15px;
+}
+
 
 
 
@@ -436,6 +441,11 @@ section.projetos .projects-box a:hover article{
 
 .card-text {
     margin-bottom: 0.75rem;
+}
+.card:hover .card-text small{
+    /* Adicionar cor diferente e undeline*/
+    text-decoration: underline;
+    color: #3949AB;
 }
 
 .text-muted {
