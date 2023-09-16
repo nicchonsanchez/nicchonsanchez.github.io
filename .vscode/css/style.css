@@ -450,6 +450,8 @@ section.projetos .projects-box a:hover article{
     padding: 1px 3px;
     margin: 1px;
     border-radius: 2px;
+    border: 1px solid #ccc;
+    background: #f3f3f3;
 }
 .tecnologias > div i{
     padding: 3px;
