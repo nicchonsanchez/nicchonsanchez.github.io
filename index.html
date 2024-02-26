@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <!-- Personalização -->
-    <title>Pokedex</title>
-    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico" />
-    <meta name="theme-color" content="rgb(33, 5, 44)">
+    <title>Nicchon Sanchez</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#061e4e">
 
     <!-- Config -->
     <meta charset="UTF-8">
@@ -12,207 +13,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="title" content="Pedra, papel ou tesoura?">
+    <meta name="title" content="Nicchon Sanchez Pinto">
     <meta name="author" content="Nicchon Sanchez Pinto">
     <meta property="og:image" itemprop="image" content="http://nicchon.com/images/icone-meta.png">
-    <meta name="description" content="Jogue agora mesmo! Pokedex">
-    <meta name="keywords" content="pokemon,pokedex,jogo pokedex, Nicchon, Nicchon Sanchez">
+    <meta name="description" content="Sou desenvolvedor web e estou em busca do meu primeiro emprego como Full Stack Jr ou Front-end Jr.<br/>
+    Sou aluno da Danki Code, há alguns anos que estudo pela plataforma, os principais que já assisti são o de front-end (completo e 2.0), desenvolvimento web (que é voltado ao Back-end), JavaScript, PHP Jedai, Python, React.Js, Vue.Js, design para web e alguns outros.
+    Meus projetos e anotações das aulas estão disponíveis no meu perfil do GitHub. Estou cursando tecnólogo em desenvolvimento web na faculdade Anhanguera.<br/>
+    Sou católico, comunicativo, simples, dedicado, amigável e respeitoso.">
+    <meta name="keywords" content="Nicchon,Nicchon Sanchez,Nicchon Sanchez Pinto,Nick Sanchez,Site,Sites,Desenvolvedor Web,Web Development,Web Dev,Developer">
 
-    <!-- Fontes -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap" rel="stylesheet">
-    
-    <!--JS-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Open Sans', sans-serif;
-        }
-        html, body{
-            height: 100%;
-            background-color: #fdfdfd;
-        }
-        a{
-            color: unset;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css?v=7">
+    <!-- Link para ICONS Fa fas-etc --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        /* Scrollbar */
-        ::-webkit-scrollbar-track {
-            background-color: #fff;
-        }
-
-        ::-webkit-scrollbar {
-            background-color: #fff;
-            width: 10px;	
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #a0182d;
-            border-left: 1px solid #1e0206;
-        }
-
-        ::-webkit-scrollbar-track-piece {
-            background-color: #fff;
-            border-left: 1px solid #1e0206;
-        }
-
-        header{
-            background-color: #c90c29;
-            border-bottom: 5px solid #e6bc2f;
-            padding: 30px 2%;
-        }
-        header h2{
-            font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 1.8em;
-            text-align: center;
-        }
-        section{
-            padding: 30px 2%;
-        }
-
-        #form{
-            text-align: center;
-        }
-        #form .input-single label{
-            display: block;
-            margin-bottom: 5px;
-            color: #4dad5b;
-            font-weight: 700;
-        }
-        #form input{
-            padding: 10px;
-            width: 300px;
-            max-width: 100%;
-            border-color: #4dad5b;
-            border-radius: 4px;
-            text-align: center;
-        }
-
-        #pokemons{
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            padding-bottom: 60px;
-        }
-        #pokemons .pokemon{
-            border-radius: 4px;
-            border: 3px solid #232323;
-        }
-        #pokemons .pokemon figure{
-            height: 250px;
-            width: 200px;
-            background-color: #525252;
-            position: relative;
-        }
-        #pokemons .pokemon img{
-            width: 100%;
-        }
-        #pokemons .pokemon figcaption{
-            background-color: #232323;
-            text-align: center;
-            color: white;
-            font-size: 1.6em;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-        footer{
-            background-color: #c90c29;
-            border-top: 5px solid #e6bc2f;
-            padding: 10px 2%;
-        }
-        footer p{
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Gráficos --> <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
-        <h2>Pokedex!</h2>
-    </header>
-    <main>
-        <section id="form">
-            <div class="input-single">
-                <label for="quantidade">Quantos pokemón pegaremos?</label>
-                <input type="number" name="quantidade" id="quantidade" placeholder="Coloque aqui a quantidade de pokemóns!">
-            </div>
-            <!-- /.input-single -->
-        </section>
-        <section id="pokemons">
-            <article class="pokemon">
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-            </article>
-        </section>
-    </main>
 
+    <header>
+        <nav class="principal">
+            <ul class="menu">
+                <li>
+                    <a href="#home" class="scrollSuave">
+                        <div><p>Home</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre" class="scrollSuave">
+                        <div><p>Sobre</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formacao" class="scrollSuave">
+                        <div><p>Formação</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projetos" class="scrollSuave">
+                        <div><p>Projetos</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contatos" class="scrollSuave">
+                        <div><p>Contatos</p></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+            <article>
+                <a href="#"><img id="logo" src="images/favicon.png" alt="Nicchon Sanchez"></a>
+                <h1>Nicchon Sanchez Pinto</h1>
+                <h2>Desenvolvedor web</h2>
+            </article>
+            <a href="#sobre" class="scrollSuave"><div class="down-arrow"><img src="images/arrow.ico" alt=""></div></a>
+    </section>
+    <!-- Home -->
+    
+        <div class="circle"></div><!-- circle -->
+        
+    <section id="sobre" class="sobre">
+        <div class="container">
+
+            <figure>
+                <img src="images/foto-sobre.png" alt="Nicchon Sanchez">
+            </figure>
+
+            <div class="sobre-mim">
+                <h2>
+                    Olá, sou o Nick!
+                </h2>
+                <p>
+                    Sou desenvolvedor web e estou em busca do meu primeiro emprego como <b>Full Stack Jr</b> ou <b>Front-end Jr.</b><br/>
+                    Sou aluno da Danki Code, há alguns anos que estudo pela plataforma, os principais que já assisti são o de <b>front-end</b> (completo e 2.0), <b>desenvolvimento web</b> (que é voltado ao <b>Back-end</b>), <b>JavaScript</b>, <b>PHP Jedai</b>, <b>Python</b>, <b>React.Js</b>, <b>Vue.Js</b>, <b>design para web</b> e alguns outros.
+                    Meus projetos e anotações das aulas estão disponíveis no <a target="_blank" href="https://github.com/nicchonsanchez">meu perfil do GitHub</a>. Estou cursando <b>tecnólogo em desenvolvimento web</b> na faculdade Anhanguera.<br/>
+                    Sou católico, comunicativo, simples, dedicado, amigável e respeitoso.
+                </p>
+            </div>
+            <!-- /.sobre-mim -->
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- sobre -->
+
+    <section id="formacao" class="formacao">
+        <div class="container">
+
+            <h2 class="titulo-pag">Formação & Proficiências</h2>
+
+            <article id="formacao-academica" class="formacao-academica">
+				<h3>Formação acadêmica</h3>
+                
+				<div>
+					<h4>Superior Tecnólogo Desenvolvimento Web</h4>
+					<p>Anhanguera<br>
+
+					Cursando desde março de 2023.</p>
+				</div>
+				
+				<div>
+					<h4>Ensino médio (2º grau)</h4>
+					<p>Escola Estadual Antônio Augusto Ribeiro, Betim - MG.<br>
+
+					Concluído em dezembro de 2018.</p>
+				</div>
+
+			</article><!-- formacao-academica -->
+			
+			<article id="idiomas" class="idiomas">
+				<h3>Idiomas</h3>
+				
+				<!-- Cards adicionados com o JavaScript -->
+
+			</article><!-- idiomas -->
+
+            <article id="cursos-complementates" class="cursos-complementates">
+				<h3>Cursos complementates</h3>
+				
+				<!-- Cards adicionados com o JavaScript -->
+
+			</article>
+            <!-- cursos-complementates -->
+
+            <article id="habilidades" class="habilidades">
+				<h3>
+                    <span>Habilidades</span><br>
+                    <hr style="transform: translateY(-15px);">
+                </h3>
+				
+                <!-- Cards adicionados com o JavaScript -->
+
+			</article>
+            <!-- programacao -->
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.formacao -->
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="titulo-pag">Projetos</h2>
+
+            <div class="projects-box">
+
+                <!-- Cards gerados pelo JS -->
+
+            </div>
+            <!-- /.projects-box -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.projetos -->
+
+    <section class="contatos" id="contatos">
+        <div class="bg"></div><!-- /.bg -->
+        <div class="container">
+            <h2 class="titulo-pag">Contatos</h2>
+
+            <div class="position">
+                <div class="foto-contatos"></div><!-- /.foto-contatos -->
+                <div class="info">
+                    <div class="info-single">
+                        <h2>Telefones:</h2>
+                        <ul>
+                            <li><a href="tel:+5531989116860">31 98911-6860</a> <a href="https://wa.me/5531989116860" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                            <li><a href="tel:+5531993767301">31 99376-7301</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.info-single -->
+                    <div class="info-single">
+                        <h2>E-mails:</h2>
+                        <ul>
+                            <li><a href="mailto:contato@nicchon.com">contato@nicchon.com</a></li>
+                            <li><a href="mailto:nicchonsanchez@gmail.com">nicchonsanchez@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.info-single -->
+                    <div class="info-single">
+                        <h2>Redes sociais:</h2>
+                        <ul>
+                            <li><a href="https://github.com/nicchonsanchez/" target="_blank"><i class="fa fa-github"></i>GitHUB: @nicchonsanchez</a></li>
+                            <li><a href="https://www.linkedin.com/in/nicchonsanchez/" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn: @nicchonsanchez</a></li>
+                            <li><a href="https://instagram.com/nicchon.sanchez/" target="_blank"><i class="fa fa-instagram"></i>Instagram: @nicchon.sanchez</a></li>
+                            <li><a href="https://facebook.com/nicchon.sanchez/" target="_blank"><i class="fa fa-facebook"></i>Facebook: @nicchon.sanchez</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.info-single -->
+                </div>
+                <!-- /.info -->
+                <div class="endereco"><a href="https://www.google.com.br/maps/place/R.+Rio+Japes+-+Santa+Cruz,+Betim+-+MG,+32667-354/" target="_blank" rel="noopener noreferrer"><i style="color: red;" class="fa fa-map-pin"></i> R. Rio Japes - Santa Cruz, Betim - MG</a></div>
+                <!-- /.endereco -->
+            </div>
+            <!-- /.position -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.contatos -->
+
+    
     <footer>
-        <p>Todos os direitos reservados | Criado por <a target="_blank" href="http://nicchon.com">nicchon.com</a></p>
+        <p>2023 © Todos os direitos reservados | Feito por: <a href="https://nicchon.com/" target="_blank" style="color: white; text-decoration: underline 1px;">www.nicchon.com</a></p>
     </footer>
 
-    <script>
-        $('#form input').keyup(()=>{
-            pegarPokemon($('#form input').val());
-        })
-        $('#form input').click(()=>{
-            pegarPokemon($('#form input').val());
-        })
 
-        function pegarPokemon(quantidade){
-            fetch(`https://pokeapi.co/api/v2/pokemon?limit=${quantidade}`)
-                .then(response => response.json())
-                .then(allpokemon => {
-
-                    var pokemons = [];
-
-                    allpokemon.results.map((val)=>{
-                        fetch(val.url)
-                            .then(response => response.json())
-                            .then(pokemonSingle => {
-
-                                pokemons.push({
-                                    nome: val.name,
-                                    imagem: pokemonSingle.sprites.front_default
-                                });
-                                console.log(allpokemon);
-                                console.log(pokemonSingle);
-
-                                if(pokemons.length == quantidade){
-                                    // Esvaziar a sessão onde ficarão os Pokemóns
-                                    $('#pokemons').html("");
-
-                                    // Adicionar pokemóns à sessão
-                                    pokemons.map(function(val){
-                                        $('#pokemons').html($('#pokemons').html()+`
-                                        
-                                        <article class="pokemon">
-                                            <figure>
-                                                <img src="${val.imagem}" alt="${val.nome}">
-                                                <figcaption>${val.nome}</figcaption>
-                                            </figure>
-                                        </article>
-
-                                        `)
-                                    })
-                                }
-                            })
-                    })
-
-                });
-        }
-    </script>
+    <!-- JS -->
+    <script src="js/script.js?v=7"></script>
 </body>
 </html>
